@@ -1,5 +1,9 @@
 # AI SQL Query Optimizer
 
+**Status: Completed portfolio implementation; synthetic data and mock integrations**
+
+**Status: Completed portfolio implementation; synthetic data and mock integrations**
+
 Portfolio project demonstrating a safety-first SQL optimization assistant over a synthetic PostgreSQL database. It detects common performance risks, retrieves tuning guidance, proposes constrained rewrites, and clearly labels unmeasured benefits as theoretical.
 
 ## Business Problem
@@ -125,13 +129,22 @@ Add PostgreSQL `EXPLAIN (FORMAT JSON)` ingestion, schema-aware type conversion c
 4. What tool-call policy prevents the model from bypassing validation?
 5. How would you build a feedback loop from accepted recommendations?
 
-## GitHub Commands
+## Resume Relevance
+
+Demonstrates Python, FastAPI, Streamlit, SQLGlot AST parsing, read-only SQL policy, PostgreSQL, RAG-style rules, Docker, testing, and evaluation without claiming unmeasured performance gains.
+
+## Author and Related Work
+
+**Sunil Javadi** · [GitHub](https://github.com/suniljavadi) · [Portfolio](https://github.com/suniljavadi/sunil-portfolio) · [LinkedIn](https://www.linkedin.com/in/sunil-javadi/)
+
+- [AI SQL Optimizer](https://github.com/suniljavadi/AI-SQL-Optimizer)
+- [Enterprise Text-to-SQL AI Agent](https://github.com/suniljavadi/Text-to-SQL-AI-Agent)
+- [Data Engineering MCP Server](https://github.com/suniljavadi/data-engineering-mcp-server)
+
+## Local Git Workflow
 
 ```powershell
-git init
 git add .
 git commit -m "Build AI SQL query optimizer"
-git branch -M main
-git remote add origin https://github.com/YOUR_USER/ai-sql-optimizer.git
-git push -u origin main
+git push origin main
 ```
