@@ -85,7 +85,7 @@ The optimizer identifies `SELECT *`, a function on a date column, and a possible
 
 ## Security
 
-The validator blocks write/DDL/admin keywords and parses SQL before execution. Optional execution wraps a validated query in a row-limited outer SELECT and uses a configured local database. Do not point this demo at production. Observability records a short query fingerprint, event, latency, and error flag, never raw SQL.
+The validator blocks write/DDL/admin keywords and parses SQL before execution. Optional execution wraps a validated query in a row-limited outer SELECT, reuses its SQLAlchemy engine, and uses a PostgreSQL read-only transaction with a statement timeout. Database failures return a generic message rather than raw SQL or driver details. Do not point this demo at production without authentication, a dedicated least-privilege database account, rate limiting, and operational controls. Observability records a short query fingerprint, event, latency, and error flag, never raw SQL.
 
 ## Evaluation
 
